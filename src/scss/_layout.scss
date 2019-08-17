@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction:column;
+  max-width: 1280px;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul,li{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+}
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+.footer {
+  background: #faf9fc;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  @include respond-to('medium') {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    text-decoration: none;
+    flex-wrap: wrap;
+    @include respond-to('medium') {
+      justify-content: space-evenly;
+
+    }
+    &__item{
+      margin: 15px;
+      .title{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: 0.8rem;
+        text-align: left;
+        font-weight: bold;
+      }
+    }
+  }
+  &__cta{
+    a{
+      text-decoration: none;
+      padding: 20px;
+      color : $main-purple;
+    }
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+
+  }
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
+
+

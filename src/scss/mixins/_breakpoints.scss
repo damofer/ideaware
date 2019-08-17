@@ -1,6 +1,7 @@
 /// Mixin to manage responsive breakpoints
 /// @param {String} $breakpoint - Breakpoint name
 $breakpoints: (
+        'x-small':  414px,
         'small':  767px,
         'medium': 992px,
         'large':  1200px

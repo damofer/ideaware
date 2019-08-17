@@ -1,13 +1,18 @@
 @import 'mixins/breakpoints.scss';
 .hero {
   padding: 20px;
+  padding-bottom: 50px;
   position: relative;
   width: 100%;
   background-size: cover !important;
-  height: 65vh;
+  height: auto;
+
+  @include respond-to('x-small') {
+    padding-bottom: 100px;
+  }
   @include respond-to('medium') {
+
     height: 673px;
-    max-height: 673px;
   }
 }
 
@@ -57,12 +62,8 @@
 
 .hero-button {
   width: 150px;
-  margin-top: 30px;
-  padding: 10px 15px;
-  background: #6161e8;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: none;
-  text-decoration: none;
+  @include respond-to('x-small') {
+    margin-top: 30px;
+
+  }
 }

@@ -1,9 +1,14 @@
+@import 'mixins/breakpoints.scss';
 .hero {
+  padding: 20px;
   position: relative;
   width: 100%;
-  height: 500px;
-
-
+  background-size: cover !important;
+  height: 65vh;
+  @include respond-to('medium') {
+    height: 673px;
+    max-height: 673px;
+  }
 }
 
 .hero::before {
@@ -19,7 +24,45 @@
 }
 .hero-content{
   position:relative;
-  margin-top: 129px;
+
   padding: 10px;
   color: #fff;
+  max-width: 430px;
+  width: 100%;
+  margin-top: 60px;
+
+  @include respond-to('medium') {
+    margin-top: 129px;
+    margin-left: 140px;
+  }
+
+
+}
+
+.hero-title {
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 1.8rem;
+  b{
+    color : #6161e8;
+  }
+  @include respond-to('medium') {
+    font-size: 2.5rem;
+  }
+}
+.hero-subtitle{
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.hero-button {
+  width: 150px;
+  margin-top: 30px;
+  padding: 10px 15px;
+  background: #6161e8;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
 }

@@ -42,7 +42,7 @@ header nav {
       padding: 14px 16px;
       text-decoration: none;
       border: 2px solid transparent;
-      border-radius: 25px;
+      border-radius: 10px;
       &:hover {
         border: 2px solid #fff;
 
@@ -76,20 +76,28 @@ header nav {
   }
 }
 .MobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   @include respond-to('medium') {
     display: none;
   }
-  padding: 5px 20px;
+  &__logo{
+    margin-left: 10px;
+  }
+
+  padding: 5px 0;
   overflow: hidden;
   background-color: #fff;
   position: relative;
   &__cto {
+    margin: 10px 0;
     width: 100%;
     padding: 10px 15px;
-    background: #a277ff;
+    background: #6161e8;
     color: #fff;
-    font-size: 2rem;
-    border-radius: 25px;
+    font-size: 0.8rem;
+    border-radius: 10px;
     border: none;
     text-decoration: none;
   }
@@ -108,7 +116,7 @@ header nav {
 }
 
 .MobileNav a.icon {
-  background: black;
+  
   display: block;
   position: absolute;
   right: 0;
@@ -120,6 +128,16 @@ header nav {
   color: black;
 }
 
+#burgerNav{
+  margin-top: 3px;
+  border-top: 0.5px solid rgba(#000,0.2);
+  padding: 10px;
+  display: none;
+  width: 100%;
+
+  flex-direction: column;
+  align-items: flex-start;
+}
 .active {
   background-color: #4CAF50;
   color: white;

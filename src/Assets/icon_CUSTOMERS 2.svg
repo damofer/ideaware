@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>icon_CUSTOMERS 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1039.000000, -1343.000000)">
+            <g id="icon_CUSTOMERS-2" transform="translate(1037.000000, 1341.000000)">
+                <polygon id="Path" points="0 0 54 0 54 54 0 54"></polygon>
+                <path d="M51.075,42.75 L30.6,22.275 C32.625,17.1 31.5,11.025 27.225,6.75 C22.725,2.25 15.975,1.35 10.575,3.825 L20.25,13.5 L13.5,20.25 L3.6,10.575 C0.9,15.975 2.025,22.725 6.525,27.225 C10.8,31.5 16.875,32.625 22.05,30.6 L42.525,51.075 C43.425,51.975 44.775,51.975 45.675,51.075 L50.85,45.9 C51.975,45 51.975,43.425 51.075,42.75 Z" id="Path" fill="#8FEEE7" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

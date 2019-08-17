@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="46px" viewBox="0 0 42 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>icon_AGENTS</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-767.000000, -1345.000000)">
+            <g id="icon_AGENTS" transform="translate(761.000000, 1341.000000)">
+                <path d="M46.125,13.5 C40.2525,15.075 33.3675,15.75 27,15.75 C20.6325,15.75 13.7475,15.075 7.875,13.5 L6.75,18 C10.935,19.125 15.75,19.8675 20.25,20.25 L20.25,49.5 L24.75,49.5 L24.75,36 L29.25,36 L29.25,49.5 L33.75,49.5 L33.75,20.25 C38.25,19.8675 43.065,19.125 47.25,18 L46.125,13.5 Z M27,13.5 C29.475,13.5 31.5,11.475 31.5,9 C31.5,6.525 29.475,4.5 27,4.5 C24.525,4.5 22.5,6.525 22.5,9 C22.5,11.475 24.525,13.5 27,13.5 Z" id="Shape" fill="#B1EFEA" fill-rule="nonzero"></path>
+                <polygon id="Path" points="0 0 54 0 54 54 0 54"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

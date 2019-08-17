@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="32px" viewBox="0 0 46 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>Icon_CUSTOMERS</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-490.000000, -1352.000000)">
+            <g id="Icon_CUSTOMERS" transform="translate(486.000000, 1341.000000)">
+                <polygon id="Path" points="0 0 54 0 54 54 0 54"></polygon>
+                <path d="M37.125,27 C40.23,27 42.7275,24.48 42.7275,21.375 C42.7275,18.27 40.23,15.75 37.125,15.75 C34.02,15.75 31.5,18.27 31.5,21.375 C31.5,24.48 34.02,27 37.125,27 Z M20.25,24.75 C23.985,24.75 26.9775,21.735 26.9775,18 C26.9775,14.265 23.985,11.25 20.25,11.25 C16.515,11.25 13.5,14.265 13.5,18 C13.5,21.735 16.515,24.75 20.25,24.75 Z M37.125,31.5 C33.0075,31.5 24.75,33.57 24.75,37.6875 L24.75,42.75 L49.5,42.75 L49.5,37.6875 C49.5,33.57 41.2425,31.5 37.125,31.5 Z M20.25,29.25 C15.0075,29.25 4.5,31.8825 4.5,37.125 L4.5,42.75 L20.25,42.75 L20.25,37.6875 C20.25,35.775 20.9925,32.4225 25.5825,29.88 C23.625,29.475 21.735,29.25 20.25,29.25 Z" id="Shape" fill="#9090E7" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

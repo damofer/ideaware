@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--# -->
+    <header>
+        <div class="DesktopNav">
+            <nav>
+                <img src="./Assets/logo.svg" alt="">
+                <ul>
+                    <li>
+                        <a href="#products">Products</a>
+                    </li>
+                    <li>
+                        <a href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#solutions">Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#demo">Demo</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#getstarted">Get started</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="MobileNav">
+            <img src="./Assets/Logo_Fixed%20Header.svg" alt="">
+            <div id="burgerNav">
+                <a href="#news">Products</a>
+                <a href="#contact">Pricing</a>
+                <a href="#about">Solutions</a>
+                <a href="#about">Demo</a>
+                <a href="#about">Services</a>
+                <button class="MobileNav__cto">Get Started</button>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero" style="background: url('./Assets/Photo above the fold.png') no-repeat center">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    HR software <br>
+                    that really matters
+
+                </h1>
+                <p class="hero-subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate.
+                </p>
+                <button type="button" class="hero-button" onclick="location.href='tours.html'">
+                    Get started &raquo;
+                </button>
+            </div>
+        </section>
+        <!--<figure class="hero">-->
+            <!--<img width="100%" src="Assets/Photo%20above%20the%20fold.png" alt="">-->
+        <!--</figure>-->
+
+        <section>
+            <figure>
+                <img src="Assets/room-GkWrEPTyDRs-unsplash.png" width='100%' alt="">
+            </figure>
+
+
+            <article>
+                <h1>Get ahead of the curve</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("burgerNav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

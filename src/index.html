@@ -75,9 +75,9 @@
             <figure>
                 <img src="Assets/room-GkWrEPTyDRs-unsplash.png" width='100%' alt="">
             </figure>
-            <article>
+            <article class="section-article">
                 <div class="section-title">Get ahead of<br> the curve</div>
-                <div class="section-subtitle">
+                <div class="section-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -131,6 +131,36 @@
 
 
 
+        </section>
+        <section class="seeWhereYouStand">
+            <article class="section-article center">
+                <div class="section-title">See where you stand</div>
+                <div class="section-subtitle ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </div>
+            </article>
+            <div class="industry">
+                <h5>Industry</h5>
+                <div class="dropdown">
+                    <div class="select">
+                        <span>Select</span>
+                        <i class="fa fa-chevron-up"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="industry-search">Search</li>
+                        <li id="industry-education">Education</li>
+                        <li id="industry-energy">Energy</li>
+                        <li id="industry-entertainment">Entertainment & Gaming</li>
+                        <li id="industry-financial">Financial Services</li>
+                        <li id="industry-government">Government & Non-profit</li>
+                        <li id="industry-healthcare">Healthcare</li>
+
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -193,30 +223,54 @@
     <script>
 
         function myFunction() {
-            var x = document.getElementById("burgerNav");
+            let x = document.getElementById("burgerNav");
             if (x.style.display === "flex") {
                 x.style.display = "none";
             } else {
                 x.style.display = "flex";
             }
         }
+        $(document).ready(function(){
+            $('.incremental').each(function(index){
+                let el = this;
+                $({someValue: 0}).animate({someValue: parseInt(this.innerHTML)}, {
+                    duration: 3000,
+                    easing:'swing', // can be anything
+                    step: function() { // called on every step
+                        // Update the element's text with Fixed  value:
+                        $(el).text(this.someValue.toFixed(0));
+                    },
+                    complete:function(){
+                        $(el).text(this.someValue.toFixed(0));
 
-        $('.incremental').each(function(index){
-            let el = this;
-            $({someValue: 0}).animate({someValue: parseInt(this.innerHTML)}, {
-                duration: 3000,
-                easing:'swing', // can be anything
-                step: function() { // called on every step
-                    // Update the element's text with Fixed  value:
-                    
-                    $(el).text(this.someValue.toFixed(0));
-                },
-                complete:function(){
-                    $(el).text(this.someValue.toFixed(0));
-
-                }
+                    }
+                });
             });
-        });
+
+            /*Dropdown Menu*/
+            $('.dropdown').click(function () {
+                $(this).attr('tabindex', 1).focus();
+                $(this).toggleClass('active');
+                $(this).find('.dropdown-menu').slideToggle(300);
+            });
+            $('.dropdown').focusout(function () {
+                $(this).removeClass('active');
+                $(this).find('.dropdown-menu').slideUp(300);
+            });
+            $('.dropdown .dropdown-menu li').click(function () {
+                $(this).parents('.dropdown').find('span').text($(this).text());
+                $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+            });
+            /*End Dropdown Menu*/
+
+
+            $('.dropdown-menu li').click(function () {
+                var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
+                    msg = '<span class="msg">Hidden input value: ';
+                $('.msg').html(msg + input + '</span>');
+            });
+        })
+
 
     </script>
 </body>

@@ -1,3 +1,20 @@
+.section-article{
+
+  margin: auto !important;
+  text-align: center;
+  @include respond-to('medium') {
+
+    text-align: left;
+    margin-left: inherit !important ;
+
+  }
+
+  &.center{
+    text-align: center;
+    margin: auto !important ;
+  }
+
+}
 .section-title {
 
   font-size: 2rem;
@@ -6,6 +23,13 @@
 
 }
 .section-subtitle {
+  margin-top: 20px;
+  color: #5a6582;
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 600px;
+}
+.section-description {
   margin-top: 20px;
   color: #5a6582;
   font-size: 0.8rem;

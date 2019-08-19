@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-
     <!--# -->
     <header>
         <div class="DesktopNav">
@@ -47,7 +46,7 @@
                 <a href="#">Services</a>
                 <button class="MobileNav__cto">Get Started</button>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -162,6 +161,62 @@
                 </div>
             </div>
         </section>
+        <section class="learnFromOurResearch">
+            <article class="section-article center">
+                <div class="section-title">Learn from our research</div>
+                <div class="section-subtitle ">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at autem cum dolor dolorem, hic illo illum impedit laudantium natus numquam repudiandae, sunt tempora unde ut veritatis voluptates voluptatum!
+                </div>
+            </article>
+
+            <div class="card-carousel">
+                <div class="card">
+                    <div class="container">
+                        <h3><b>Learn from our research</b></h3>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <img src="Assets/Group.svg" alt="Avatar" style="width:100%">
+                    <a class='card-link' href="#">Read report</a>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <h3><b>Learn from our research</b></h3>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <img src="Assets/Group%206.svg" alt="Avatar" style="width:100%">
+                    <a class='card-link' href="#">Read report</a>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <h3><b>Learn from our research</b></h3>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <img src="Assets/Group%207.svg" alt="Avatar" style="width:100%">
+                    <a class='card-link' href="#">Read report</a>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <h3><b>Learn from our research</b></h3>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <img src="Assets/Group.svg" alt="Avatar" style="width:100%">
+                    <a class='card-link' href="#">Read report</a>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <h3><b>Learn from our research</b></h3>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <img src="Assets/Group%206.svg" alt="Avatar" style="width:100%">
+                    <a class='card-link' href="#">Read report</a>
+                </div>
+                
+
+
+
+            </div>
+        </section>
+
     </main>
     <footer class="footer">
             <ul class="footer__list">
@@ -220,58 +275,7 @@
                 <button class="cta-btn">Get started</button>
             </div>
     </footer>
-    <script>
 
-        function myFunction() {
-            let x = document.getElementById("burgerNav");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-        }
-        $(document).ready(function(){
-            $('.incremental').each(function(index){
-                let el = this;
-                $({someValue: 0}).animate({someValue: parseInt(this.innerHTML)}, {
-                    duration: 3000,
-                    easing:'swing', // can be anything
-                    step: function() { // called on every step
-                        // Update the element's text with Fixed  value:
-                        $(el).text(this.someValue.toFixed(0));
-                    },
-                    complete:function(){
-                        $(el).text(this.someValue.toFixed(0));
-
-                    }
-                });
-            });
-
-            /*Dropdown Menu*/
-            $('.dropdown').click(function () {
-                $(this).attr('tabindex', 1).focus();
-                $(this).toggleClass('active');
-                $(this).find('.dropdown-menu').slideToggle(300);
-            });
-            $('.dropdown').focusout(function () {
-                $(this).removeClass('active');
-                $(this).find('.dropdown-menu').slideUp(300);
-            });
-            $('.dropdown .dropdown-menu li').click(function () {
-                $(this).parents('.dropdown').find('span').text($(this).text());
-                $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
-            });
-            /*End Dropdown Menu*/
-
-
-            $('.dropdown-menu li').click(function () {
-                var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
-                    msg = '<span class="msg">Hidden input value: ';
-                $('.msg').html(msg + input + '</span>');
-            });
-        })
-
-
-    </script>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>

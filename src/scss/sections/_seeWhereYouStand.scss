@@ -3,7 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  @include respond-to('medium') {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+  }
   background:$section-gray;
   span.msg,
   span.choose {
@@ -19,7 +25,8 @@
 
   /*Styling Selectbox*/
   .dropdown {
-    width: 500px;
+    max-width: 500px;
+    width: 80vw;
     display: inline-block;
     background-color: #fff;
     border-radius: 5px;

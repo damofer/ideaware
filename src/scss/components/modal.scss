@@ -1,0 +1,71 @@
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+  top: 0px;
+  left:0;
+
+}
+
+#boxes .dialog {
+  position:fixed;
+  display:none;
+  z-index:9999;
+
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  @include respond-to('medium') {
+
+    max-width: 560px;
+    max-height: 315px;
+    width: 100%;
+    height: 100%;
+  }
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  .dialog{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    left:0;
+
+
+    &__content{
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    &__iframe{
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    &__close{
+      margin-left: auto;
+      color:#fff;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+
+}
+
+

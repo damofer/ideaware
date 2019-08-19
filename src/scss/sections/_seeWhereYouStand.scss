@@ -95,4 +95,30 @@
   .dropdown .dropdown-menu li:active {
     background-color: #e2e2e2
   }
+
+  .modal-trigger{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      .modal-trigger__playBtn{
+        filter: drop-shadow(2px 4px 6px black);
+      }
+    }
+    &__image{
+      max-width: 100%;
+    }
+    &__playBtn{
+      transition: all 0.3s;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left:0;
+      right:0;
+      margin: auto;
+
+
+    }
+  }
 }

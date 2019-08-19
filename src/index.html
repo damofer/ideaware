@@ -10,6 +10,19 @@
 </head>
 <body>
     <!--# -->
+    <div id="boxes">
+        <!-- #customize your modal window here -->
+        <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
+        <div id="mask"></div>
+        <div id="dialog" class="dialog">
+            <div class="dialog__content">
+                <div class="dialog__close close">X</div>
+                <iframe id="player" class='dialog__iframe' src="https://www.youtube.com/embed/TdpBRZ0dZhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+    </div>
     <header>
         <div class="DesktopNav">
             <nav>
@@ -210,13 +223,23 @@
                     <img src="Assets/Group%206.svg" alt="Avatar" style="width:100%">
                     <a class='card-link' href="#">Read report</a>
                 </div>
-                
-
-
 
             </div>
         </section>
-
+        <section class="seeWhereYouStand">
+            <article class="section-article center">
+                <div class="section-title">See where you stand</div>
+                <div class="section-subtitle ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </div>
+            </article>
+            <div id='modal-trigger' href='#dialog' class="modal-trigger">
+                <img class='modal-trigger__image' src="Assets/shark.JPG" alt="">
+                <img class='modal-trigger__playBtn' src="Assets/Group%204.svg">
+            </div>
+        </section>
     </main>
     <footer class="footer">
             <ul class="footer__list">

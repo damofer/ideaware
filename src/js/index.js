@@ -5,6 +5,7 @@ import  dropDown from "./dropdown.js";
 import  slider from "./slider.js";
 import  modalHandler from "./modalHandler.js";
 import  toggleMenu from "./toggleMenu.js";
+import formValidator from "./formValidator.js";
 
 //inject into DOM when it's ready
 $(document).ready(function(){
@@ -13,6 +14,7 @@ $(document).ready(function(){
     increment('.incremental');
     slider();
     modalHandler();
+    formValidator();
 });
 
 

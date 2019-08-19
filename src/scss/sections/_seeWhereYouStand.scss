@@ -83,7 +83,9 @@
   .dropdown .dropdown-menu li {
     padding: 10px;
     transition: all .2s ease-in-out;
-    cursor: pointer
+    cursor: pointer;
+
+    border-top: 1px solid rgba(#777,0.3);
   }
   .dropdown .dropdown-menu {
     padding: 0;
@@ -121,4 +123,25 @@
 
     }
   }
+  #industry-search{
+      padding:0 ;
+      form{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+      }
+      input{
+        border: none;
+        flex: 1;
+        padding: 10px;
+
+      }
+      button{
+        background: transparent;
+        border:none;
+        padding: 10px;
+        color: #777;
+      }
+    }
+
 }

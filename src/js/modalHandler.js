@@ -1,9 +1,9 @@
 "use strict";
-/*Dropdown Menu*/
+
 export default function() {
     $('#modal-trigger').click(function (e) {
         console.log('click');
-        //Cancel the link behavior
+        //Cancel default behavior
         e.preventDefault();
         //Get the A tag
         let id = $(this).attr('href');
@@ -39,7 +39,7 @@ export default function() {
     }
     //if close button is clicked
     $('.dialog .close, #mask').click(function (e) {
-        //Cancel the link behavior
+        //Cancel defautt behavior
         e.preventDefault();
         hideAll();
     });

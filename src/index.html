@@ -9,300 +9,341 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <!--# -->
-    <div id="boxes">
-        <!-- #customize your modal window here -->
-        <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
-        <div id="mask"></div>
-        <div id="dialog" class="dialog">
-            <div class="dialog__content">
-                <div class="dialog__close close">X</div>
-                <iframe id="player"
-                        class='dialog__iframe'
-                        src="https://www.youtube.com/embed/TdpBRZ0dZhw"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+<!--# -->
+<div id="boxes">
+    <!-- #customize your modal window here -->
+    <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
+    <div id="mask"></div>
+    <div id="dialog" class="dialog">
+        <div class="dialog__content">
+            <div class="dialog__close close">X</div>
+            <iframe id="player"
+                    class='dialog__iframe'
+                    src="https://www.youtube.com/embed/TdpBRZ0dZhw"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-
-
     </div>
-    <header>
-        <div class="DesktopNav">
-            <nav>
-                <img src="./Assets/logo.svg" alt="">
-                <ul>
-                    <li>
-                        <a href="#products">Products</a>
-                    </li>
-                    <li>
-                        <a href="#pricing">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#solutions">Solutions</a>
-                    </li>
-                    <li>
-                        <a href="#demo">Demo</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#getstarted">Get started</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="MobileNav">
-            <img class="MobileNav__logo" src="./Assets/Logo_Fixed%20Header.svg" alt="">
-            <div id="burgerNav">
-                <a href="#">Products</a>
-                <a href="#">Pricing</a>
-                <a href="#">Solutions</a>
-                <a href="#">Demo</a>
-                <a href="#">Services</a>
-                <button class="MobileNav__cto">Get Started</button>
-            </div>
-            <a id='toggle-menu' href="javascript:void(0);" class="icon" >
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </header>
-    <main class="main">
-        <section class="hero" style="background: url('./Assets/Photo above the fold.png') no-repeat center">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <b>HR software</b> <br>
-                    that really matters
-                </h1>
-                <p class="hero-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate.
-                </p>
-                <button type="button" class="hero-button cta-btn" >
-                    Get started
-                </button>
-            </div>
-        </section>
-        <section class="getAheadTheCurve">
-            <figure>
-                <img src="Assets/room-GkWrEPTyDRs-unsplash.png" width='100%' alt="">
-            </figure>
-            <article class="section-article">
-                <div class="section-title">Get ahead of<br> the curve</div>
-                <div class="section-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate.
-                </div>
-            </article>
-        </section>
-        <section class="basedOnDataFrom">
-            <div class="container">
-                <h1>Based on Data From</h1>
-                <div class="basedOnDataFrom__list">
-                    <div class="basedOnDataFrom__item basedOnDataFrom__item--tickets">
-                        <div class="basedOnDataFrom__item__icon">
-                            <img src="Assets/Icon_TICKETS.svg" alt="">
-                        </div>
-                        <div class="basedOnDataFrom__item__content">
-                            <h1 class="item-title incremental">200</h1>
-                            <p>Tickets</p>
-                        </div>
-                    </div>
-                    <div class="basedOnDataFrom__item basedOnDataFrom__item--customers">
-                        <div class="basedOnDataFrom__item__icon">
-                            <img src="Assets/Icon_CUSTOMERS.svg" alt="">
-                        </div>
-                        <div class="basedOnDataFrom__item__content">
-                            <h1 class="item-title incremental">320M</h1>
-                            <p>Customers</p>
-                        </div>
-                    </div>
-                    <div class="basedOnDataFrom__item basedOnDataFrom__item--agents">
-                        <div class="basedOnDataFrom__item__icon">
-                            <img src="Assets/icon_AGENTS.svg" alt="">
-                        </div>
-                        <div class="basedOnDataFrom__item__content">
-                            <h1 class="item-title incremental">320M</h1>
-                            <p>Agents</p>
-                        </div>
-                    </div>
-                    <div class="basedOnDataFrom__item basedOnDataFrom__item--customers-2">
-                        <div class="basedOnDataFrom__item__icon">
-                            <img src="Assets/icon_CUSTOMERS%202.svg" alt="">
-                        </div>
-                        <div class="basedOnDataFrom__item__content">
-                            <h1 class="item-title incremental">320</h1>
-                            <p>Customers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
-
-        </section>
-        <section class="seeWhereYouStand">
-            <article class="section-article center">
-                <div class="section-title">See where you stand</div>
-                <div class="section-subtitle ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </div>
-            </article>
-            <div class="industry">
-                <h5>Industry</h5>
-                <div class="dropdown">
-                    <div class="select">
-                        <span>Select</span>
-                        <i class="fa fa-chevron-up"></i>
-                    </div>
-                    <input type="hidden" name="gender">
-                    <ul class="dropdown-menu">
-                        <li id="industry-search">Search</li>
-                        <li id="industry-education">Education</li>
-                        <li id="industry-energy">Energy</li>
-                        <li id="industry-entertainment">Entertainment & Gaming</li>
-                        <li id="industry-financial">Financial Services</li>
-                        <li id="industry-government">Government & Non-profit</li>
-                        <li id="industry-healthcare">Healthcare</li>
-
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="learnFromOurResearch">
-            <article class="section-article center">
-                <div class="section-title">Learn from our research</div>
-                <div class="section-subtitle ">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at autem cum dolor dolorem, hic illo illum impedit laudantium natus numquam repudiandae, sunt tempora unde ut veritatis voluptates voluptatum!
-                </div>
-            </article>
-
-            <div class="card-carousel">
-                <div class="card">
-                    <div class="container">
-                        <h3><b>Learn from our research</b></h3>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <img src="Assets/Group.svg" alt="Avatar" style="width:100%">
-                    <a class='card-link' href="#">Read report</a>
-                </div>
-                <div class="card">
-                    <div class="container">
-                        <h3><b>Learn from our research</b></h3>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <img src="Assets/Group%206.svg" alt="Avatar" style="width:100%">
-                    <a class='card-link' href="#">Read report</a>
-                </div>
-                <div class="card">
-                    <div class="container">
-                        <h3><b>Learn from our research</b></h3>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <img src="Assets/Group%207.svg" alt="Avatar" style="width:100%">
-                    <a class='card-link' href="#">Read report</a>
-                </div>
-                <div class="card">
-                    <div class="container">
-                        <h3><b>Learn from our research</b></h3>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <img src="Assets/Group.svg" alt="Avatar" style="width:100%">
-                    <a class='card-link' href="#">Read report</a>
-                </div>
-                <div class="card">
-                    <div class="container">
-                        <h3><b>Learn from our research</b></h3>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <img src="Assets/Group%206.svg" alt="Avatar" style="width:100%">
-                    <a class='card-link' href="#">Read report</a>
-                </div>
-
-            </div>
-        </section>
-        <section class="seeWhereYouStand">
-            <article class="section-article center">
-                <div class="section-title">See where you stand</div>
-                <div class="section-subtitle ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </div>
-            </article>
-            <div id='modal-trigger' href='#dialog' class="modal-trigger">
-                <img class='modal-trigger__image' src="Assets/shark.JPG" alt="">
-                <img class='modal-trigger__playBtn' src="Assets/Group%204.svg">
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-            <ul class="footer__list">
-                <li class="footer__list__item">
-                    <div class="title">
-                        Products
-                    </div>
-                    <p>Enterprice</p>
-                    <p>Developers</p>
-                    <p>Iphone App</p>
+</div>
+<header>
+    <div class="DesktopNav">
+        <nav>
+            <img src="./Assets/logo.svg" alt="">
+            <ul>
+                <li>
+                    <a href="#products">Products</a>
                 </li>
-                <li class="footer__list__item">
-                    <div class="title">
-                        Products
-                    </div>
-                    <p>Enterprice</p>
-                    <p>Developers</p>
-                    <p>Iphone App</p>
+                <li>
+                    <a href="#pricing">Pricing</a>
                 </li>
-                <li class="footer__list__item">
-                    <div class="title">
-                        Products
-                    </div>
-                    <p>Enterprice</p>
-                    <p>Developers</p>
-                    <p>Iphone App</p>
+                <li>
+                    <a href="#solutions">Solutions</a>
                 </li>
-                <li class="footer__list__item">
-                    <div class="title">
-                        Products
-                    </div>
-                    <p>Enterprice</p>
-                    <p>Developers</p>
-                    <p>Iphone App</p>
+                <li>
+                    <a href="#demo">Demo</a>
                 </li>
-                <li class="footer__list__item">
-                    <div class="title">
-                        Products
-                    </div>
-                    <p>Enterprice</p>
-                    <p>Developers</p>
-                    <p>Iphone App</p>
+                <li>
+                    <a href="#services">Services</a>
                 </li>
-                <li class="footer__list__item">
-                    <div class="title">
-                        Products
-                    </div>
-                    <p>Enterprice</p>
-                    <p>Developers</p>
-                    <p>Iphone App</p>
+                <li>
+                    <a href="#getstarted">Get started</a>
                 </li>
             </ul>
-            <div class="footer__cta">
-                <!--<img src="./Assets/logo.svg" alt="">-->
-                <a href="#">Login</a>
-                <button class="cta-btn">Get started</button>
+        </nav>
+    </div>
+    <div class="MobileNav">
+        <img class="MobileNav__logo" src="./Assets/Logo_Fixed%20Header.svg" alt="">
+        <div id="burgerNav">
+            <a href="#">Products</a>
+            <a href="#">Pricing</a>
+            <a href="#">Solutions</a>
+            <a href="#">Demo</a>
+            <a href="#">Services</a>
+            <button class="MobileNav__cto">Get Started</button>
+        </div>
+        <a id='toggle-menu' href="javascript:void(0);" class="icon" >
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+<main class="main">
+    <section class="hero" style="background: url('./Assets/Photo above the fold.png') no-repeat center">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <b>HR software</b> <br>
+                that really matters
+            </h1>
+            <p class="hero-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate.
+            </p>
+            <button type="button" class="hero-button cta-btn" >
+                Get started
+            </button>
+        </div>
+    </section>
+    <section class="getAheadTheCurve">
+        <figure>
+            <img src="Assets/room-GkWrEPTyDRs-unsplash.png" width='100%' alt="">
+        </figure>
+        <article class="section-article">
+            <div class="section-title">Get ahead of<br> the curve</div>
+            <div class="section-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate.
             </div>
-    </footer>
+        </article>
+    </section>
+    <section class="basedOnDataFrom">
+        <div class="container">
+            <h1>Based on Data From</h1>
+            <div class="basedOnDataFrom__list">
+                <div class="basedOnDataFrom__item basedOnDataFrom__item--tickets">
+                    <div class="basedOnDataFrom__item__icon">
+                        <img src="Assets/Icon_TICKETS.svg" alt="">
+                    </div>
+                    <div class="basedOnDataFrom__item__content">
+                        <h1 class="item-title incremental">200</h1>
+                        <p>Tickets</p>
+                    </div>
+                </div>
+                <div class="basedOnDataFrom__item basedOnDataFrom__item--customers">
+                    <div class="basedOnDataFrom__item__icon">
+                        <img src="Assets/Icon_CUSTOMERS.svg" alt="">
+                    </div>
+                    <div class="basedOnDataFrom__item__content">
+                        <h1 class="item-title incremental">320M</h1>
+                        <p>Customers</p>
+                    </div>
+                </div>
+                <div class="basedOnDataFrom__item basedOnDataFrom__item--agents">
+                    <div class="basedOnDataFrom__item__icon">
+                        <img src="Assets/icon_AGENTS.svg" alt="">
+                    </div>
+                    <div class="basedOnDataFrom__item__content">
+                        <h1 class="item-title incremental">320M</h1>
+                        <p>Agents</p>
+                    </div>
+                </div>
+                <div class="basedOnDataFrom__item basedOnDataFrom__item--customers-2">
+                    <div class="basedOnDataFrom__item__icon">
+                        <img src="Assets/icon_CUSTOMERS%202.svg" alt="">
+                    </div>
+                    <div class="basedOnDataFrom__item__content">
+                        <h1 class="item-title incremental">320</h1>
+                        <p>Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script type="module" src="js/index.js"></script>
+
+
+    </section>
+    <section class="seeWhereYouStand">
+        <article class="section-article center">
+            <div class="section-title">See where you stand</div>
+            <div class="section-subtitle ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+            </div>
+        </article>
+        <div class="industry">
+            <h5>Industry</h5>
+            <div class="dropdown">
+                <div class="select">
+                    <span>Select</span>
+                    <i class="fa fa-chevron-up"></i>
+                </div>
+                <input type="hidden" name="gender">
+                <ul class="dropdown-menu">
+                    <div id="industry-search">
+                        <form action="#">
+                            <input id="industry-search__input" type="search" placeholder="Search" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <li id="industry-education">Education</li>
+                    <li id="industry-energy">Energy</li>
+                    <li id="industry-entertainment">Entertainment & Gaming</li>
+                    <li id="industry-financial">Financial Services</li>
+                    <li id="industry-government">Government & Non-profit</li>
+                    <li id="industry-healthcare">Healthcare</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="learnFromOurResearch">
+        <article class="section-article center">
+            <div class="section-title">Learn from our research</div>
+            <div class="section-subtitle ">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium amet at autem cum dolor dolorem, hic illo illum
+                impedit laudantium natus numquam repudiandae, sunt
+                tempora unde ut veritatis voluptates voluptatum!
+            </div>
+        </article>
+
+        <div class="card-carousel">
+            <div class="card">
+                <div class="container">
+                    <h3><b>Learn from our research</b></h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <img src="Assets/Group.svg" alt="Avatar" style="width:100%">
+                <a class='card-link' href="#">Read report</a>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h3><b>Learn from our research</b></h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <img src="Assets/Group%206.svg" alt="Avatar" style="width:100%">
+                <a class='card-link' href="#">Read report</a>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h3><b>Learn from our research</b></h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <img src="Assets/Group%207.svg" alt="Avatar" style="width:100%">
+                <a class='card-link' href="#">Read report</a>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h3><b>Learn from our research</b></h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <img src="Assets/Group.svg" alt="Avatar" style="width:100%">
+                <a class='card-link' href="#">Read report</a>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h3><b>Learn from our research</b></h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <img src="Assets/Group%206.svg" alt="Avatar" style="width:100%">
+                <a class='card-link' href="#">Read report</a>
+            </div>
+
+        </div>
+    </section>
+    <section class="seeWhereYouStand">
+        <article class="section-article center">
+            <div class="section-title">See where you stand</div>
+            <div class="section-subtitle ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+            </div>
+        </article>
+        <div id='modal-trigger' href='#dialog' class="modal-trigger">
+            <img class='modal-trigger__image' src="Assets/shark.JPG" alt="">
+            <img class='modal-trigger__playBtn' src="Assets/Group%204.svg">
+        </div>
+    </section>
+    <section class="contact" style="background: url('Assets/map.png') no-repeat top">
+        <img class='map-marker' src="Assets/Group%2014.svg" alt="">
+        <div class="contact-form__wrapper">
+            <article class="section-article center">
+                <div class="section-title">Contact Us</div>
+                <div class="section-subtitle ">
+                    Send us a message
+                </div>
+            </article>
+            <div class="contact-form__container">
+                <form id='contact-form' action="#">
+                    <input type="text" id="f_name" name="name" placeholder="Name">
+                    <input type="text" id="f_email" name="email" placeholder="Email">
+                    <input type="text" id="f_phone" name="phone" placeholder="Phone">
+                    <div>
+                        <label >How would you like us to respond ? </label>
+                        <div class="respond">
+                            <label class="respond__item">Phone
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="respond__item">Email
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea  id="f_message" name="message" placeholder="Message" rows="1" cols="50" ></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <ul class="footer__list">
+        <li class="footer__list__item">
+            <div class="title">
+                Products
+            </div>
+            <p>Enterprice</p>
+            <p>Developers</p>
+            <p>Iphone App</p>
+        </li>
+        <li class="footer__list__item">
+            <div class="title">
+                Products
+            </div>
+            <p>Enterprice</p>
+            <p>Developers</p>
+            <p>Iphone App</p>
+        </li>
+        <li class="footer__list__item">
+            <div class="title">
+                Products
+            </div>
+            <p>Enterprice</p>
+            <p>Developers</p>
+            <p>Iphone App</p>
+        </li>
+        <li class="footer__list__item">
+            <div class="title">
+                Products
+            </div>
+            <p>Enterprice</p>
+            <p>Developers</p>
+            <p>Iphone App</p>
+        </li>
+        <li class="footer__list__item">
+            <div class="title">
+                Products
+            </div>
+            <p>Enterprice</p>
+            <p>Developers</p>
+            <p>Iphone App</p>
+        </li>
+        <li class="footer__list__item">
+            <div class="title">
+                Products
+            </div>
+            <p>Enterprice</p>
+            <p>Developers</p>
+            <p>Iphone App</p>
+        </li>
+    </ul>
+    <div class="footer__cta">
+        <!--<img src="./Assets/logo.svg" alt="">-->
+        <a href="#">Login</a>
+        <button class="cta-btn">Get started</button>
+    </div>
+</footer>
+
+<script type="module" src="js/index.js"></script>
 </body>
 </html>

@@ -1,24 +1,29 @@
 "use strict";
-/*Dropdown Menu*/
+
 export default function() {
-    $('.dropdown').click(function () {
-        $(this).attr('tabindex', 1).focus();
-        $(this).toggleClass('active');
-        $(this).find('.dropdown-menu').slideToggle(300);
+
+    /*Search*/
+    $("#industry-search__input").on("keyup", function() {
+        let value = $(this).val().toLowerCase();
+        $(".dropdown-menu li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
     });
-    $('.dropdown').focusout(function () {
-        $(this).removeClass('active');
-        $(this).find('.dropdown-menu').slideUp(300);
+
+    /*dropdown*/
+    $('.dropdown .select').click(function (e) {
+        $(this).parent().attr('tabindex', 1).focus();
+        $(this).parent().toggleClass('active');
+        $(this).parent().find('.dropdown-menu').slideToggle(300);
     });
+
     $('.dropdown .dropdown-menu li').click(function () {
         $(this).parents('.dropdown').find('span').text($(this).text());
-        $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+        $(this).parents('.dropdown').find('input[type="hidden"]').attr('value', $(this).attr('id'));
+        $(this).parents('.dropdown').removeClass('active');
+        $(this).parents('.dropdown').find('.dropdown-menu').slideToggle(300);
     });
-    /*End Dropdown Menu*/
 
-    $('.dropdown-menu li').click(function () {
-        var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
-            msg = '<span class="msg">Hidden input value: ';
-        $('.msg').html(msg + input + '</span>');
-    });
+
+
 }

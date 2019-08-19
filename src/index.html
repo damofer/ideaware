@@ -17,7 +17,11 @@
         <div id="dialog" class="dialog">
             <div class="dialog__content">
                 <div class="dialog__close close">X</div>
-                <iframe id="player" class='dialog__iframe' src="https://www.youtube.com/embed/TdpBRZ0dZhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="player"
+                        class='dialog__iframe'
+                        src="https://www.youtube.com/embed/TdpBRZ0dZhw"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -59,7 +63,7 @@
                 <a href="#">Services</a>
                 <button class="MobileNav__cto">Get Started</button>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <a id='toggle-menu' href="javascript:void(0);" class="icon" >
                 <i class="fa fa-bars"></i>
             </a>
         </div>

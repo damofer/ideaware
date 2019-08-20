@@ -1,10 +1,14 @@
 .contact{
   display: flex;
   flex-direction: column;
-  background: #fff;
   padding: 10px;
   border-radius: 10px;
-
+  @include below('small') {
+    background: transparent !important;
+    .map-marker{
+      display: none;
+    }
+  }
 
   justify-content: center;
   align-items: center;
@@ -20,9 +24,11 @@
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
+    transition: .3s;
   }
   textarea:focus, input:focus{
     outline: none;
+    border-bottom: 1px solid #000;
   }
   input[type=text], select {
     width: 100%;
@@ -33,6 +39,10 @@
     border: none;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    transition: .3s;
+    &:focus{
+      border-bottom: 1px solid #000;
+    }
   }
 
   input[type=submit] {

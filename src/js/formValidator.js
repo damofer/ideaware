@@ -32,6 +32,8 @@ export  default function (){
             isValid=false;
         }
         if(isValid === true){
+            //submit to Firebase Endpoint
+
             console.log('form is valid');
         }
     });

@@ -25,6 +25,9 @@ ul,li{
 section {
   display: -webkit-flex;
   display: flex;
+  @include below('medium'){
+    padding: 3rem 0;
+  }
 }
 
 

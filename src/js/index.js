@@ -7,9 +7,11 @@ import  modalHandler from "./modalHandler.js";
 import  toggleMenu from "./toggleMenu.js";
 import formValidator from "./formValidator.js";
 import stickyNav from "./stickyNav.js";
+import firebaseInit from "./services/firebase.js"
 
 //inject into DOM when it's ready
 $(document).ready(function(){
+    firebaseInit();
     stickyNav();
     toggleMenu();
     dropDown();
@@ -17,6 +19,7 @@ $(document).ready(function(){
     slider();
     modalHandler();
     formValidator();
+
 
 });
 

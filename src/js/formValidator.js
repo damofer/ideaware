@@ -33,8 +33,29 @@ export  default function (){
         }
         if(isValid === true){
             //submit to Firebase Endpoint
+            const newEntry = {
+                name: name,
+                phone: phone,
+                email : email,
+                message: message
+            };
 
-            console.log('form is valid');
+            firebase.database().ref('/submittedForms').push( newEntry , function(error){
+                let x = $("#snackbar");
+                if(error){
+                    x.text(error.message);
+                    console.log(error.message);
+                }else{
+                    console.log('Your form was succesfully submitted!');
+                    x.text('Your form was submitted succesfully!');
+                    //reset the contact-form after submit
+                    document.getElementById("contact-form").reset();
+
+                }
+                x.addClass("show");
+                // After 3 seconds, remove the show class from DIV
+                setTimeout(function(){ x.removeClass("show"); }, 3000);
+            });
         }
     });
 }

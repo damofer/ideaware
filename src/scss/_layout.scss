@@ -153,7 +153,7 @@ article {
       display: none;
     }
     @include respond-to('small') {
-      flex-wrap: nowrap;
+      flex-wrap:nowrap;
       flex-direction: row-reverse;
     }
     @include respond-to('medium') {

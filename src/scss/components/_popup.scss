@@ -1,0 +1,40 @@
+.popup{
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  border-radius: 20px ;
+  bottom: 65px;
+  left: -140px;
+  width: 350px;
+  height: 140px;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #fff;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+  }
+  &__content{
+    font-size: 0.8rem;
+    margin: auto  ;
+    padding: 0 !important;
+  }
+}
+.popup__wrapper{
+  position: relative;
+
+  &:hover{
+    cursor: pointer;
+    .popup{
+      display: flex !important;
+
+    }
+  }
+}

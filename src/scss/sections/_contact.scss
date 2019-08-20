@@ -5,7 +5,7 @@
   border-radius: 10px;
   @include below('small') {
     background: transparent !important;
-    .map-marker{
+    .map-marker__wrapper{
       display: none;
     }
   }
@@ -140,7 +140,7 @@
     border-radius: 50%;
     background: white;
   }
-  .map-marker{
+  .map-marker__wrapper{
     position: relative;
     margin-top: 160px;
   }

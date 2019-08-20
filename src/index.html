@@ -239,7 +239,16 @@
         </div>
     </section>
     <section class="contact" style="background: url('Assets/map.png') no-repeat top">
-        <img class='map-marker' src="Assets/Group%2014.svg" alt="">
+        <div class ='map-marker__wrapper popup__wrapper'>
+            <img class='map-marker popup__marker' src="Assets/Group%2014.svg" alt="">
+            <div class="popup">
+                <img class="popup__logo" src="Assets/Group%2012.svg" alt="">
+                <div class="popup__content">
+                    <h4>FIELDS COURT STATION ROAD</h4>
+                    <p>Epworth DN9 1JZ - United Kingdom <br> Company Reg: 8202467</p>
+                </div>
+            </div>
+        </div>
         <div class="contact-form__wrapper">
             <article class="section-article center">
                 <div class="section-title">Contact Us</div>
@@ -348,5 +357,11 @@
 </footer>
 
 <script type="module" src="js/index.js"></script>
+<script>
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+</script>
 </body>
 </html>
